@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova_agent-checkout" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>agentCheckout</name>
+    <js-module name="agent_checkout" src="www/agent_checkout.js">
+        <clobbers target="cordova.agentCheckout" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="agentCheckout">
+                <param name="android-package" value="cordova.plugin.agentCheckout.agentCheckout" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/agentCheckout.java" target-dir="src/cordova/plugin/agentCheckout/agentCheckout" />  
+        <framework custom="true" src="src/android/agentCheckout.gradle" type="gradleReference" />
+    </platform>
+</plugin>
