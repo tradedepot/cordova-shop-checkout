@@ -31,7 +31,6 @@ public class agent_checkout extends CordovaPlugin {
             @Override public void run() {
                 //We also initialize agentCheckout here just in case it has died. 
                 setUpAgentCheckout();
-                Intercom.client().handlePushMessage();
             }
         });
     }
