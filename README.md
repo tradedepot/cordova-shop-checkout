@@ -26,7 +26,7 @@ Phonegap.
 
 ## Acknowledgements
 
-Thanks to [Onyemachi Okafor](https://github.com/peerwaya) for making a Cordova plugin for AgentCheckout for android which helped lots of people to integrate Intercom in their android Cordova apps. 👍
+Thanks to [Onyemachi Okafor](https://github.com/peerwaya) for help in making a Cordova plugin for AgentCheckout for android which helped lots of people to integrate Intercom in their android Cordova apps. 👍
 
 ## License
 
