@@ -21,6 +21,7 @@ An example app is provided [here](https://github.com/rayjadore/cordova-agentChec
 ## Setup and Configuration
 
 * Our [installation guide](https://developer.shoptopup.com/docs//cordova-phonegap-installation) contains full setup and initialisation instructions.
+* in config.xml file add your api-key  <preference name="agentCheckout-android-api-key" value="API_KEY" /> 
 
 
 ## Acknowledgements
