@@ -1,7 +1,7 @@
 
 # AgentCheckout for Cordova/PhoneGap
 
-This is a plugin that allows your Cordova or PhoneGap app to use [Intercom for Android](https://github.com/intercom/intercom-android).
+This is a plugin that allows your Cordova or PhoneGap app to use [AgentCheckout for Android](https://github.com/intercom/intercom-android).
 
 * AgentCheckout for Android supports API 19 and above.
 
