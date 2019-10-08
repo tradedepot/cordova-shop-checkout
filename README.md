@@ -3,7 +3,7 @@
 
 This is a plugin that allows your Cordova or PhoneGap app to use [AgentCheckout for Android](https://github.com/intercom/intercom-android).
 
-* AgentCheckout for Android supports API 19 and above.
+* AgentCheckout for Android supports API 15 and above.
 
 ## Installation
 
@@ -22,11 +22,11 @@ An example app is provided [here](https://github.com/rayjadore/cordova-agentChec
 
 * Our [installation guide](https://developer.shoptopup.com/docs//cordova-phonegap-installation) contains full setup and initialisation instructions.
 Phonegap.
-* Please contact us on [Intercom](https://www.tradedepot.co/) with any questions you may have, we're only a message away!
+* Please contact us on [AgentCheckout](https://www.tradedepot.co/) with any questions you may have, we're only a message away!
 
 ## Acknowledgements
 
-Thanks to [Onyemachi Okafor](https://github.com/peerwaya) and [Onwuegbuzie chisom](https://github.com/rayjadore)  for making a Cordova plugin for AgentCheckout for android which helped lots of people to integrate Intercom in their android Cordova apps. 👍
+Thanks to [Onyemachi Okafor](https://github.com/peerwaya) for making a Cordova plugin for AgentCheckout for android which helped lots of people to integrate Intercom in their android Cordova apps. 👍
 
 ## License
 
