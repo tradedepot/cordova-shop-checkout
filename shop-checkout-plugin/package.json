@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-shop-checkout",
+  "version": "0.1.0",
+  "description": "a cordova plugin for shop checkout",
+  "cordova": {
+    "id": "cordova-plugin-shop-checkout",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tradedepot/cordova-shop-checkout.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "tradedepot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tradedepot/cordova-shop-checkout/issues"
+  },
+  "homepage": "https://github.com/tradedepot/cordova-shop-checkout#readme"
+}

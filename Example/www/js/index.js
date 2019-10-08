@@ -30,7 +30,7 @@ var app = {
         this.receivedEvent('deviceready');
 
         document.getElementById("register-btn").addEventListener("click", function(){
-            agentCheckout.registerAgent({
+            shopCheckout.registerAgent({
                 // predefined user attributes
             agentId: 'fhj50tgoonoo',
             firstName: 'chisom',
@@ -45,11 +45,11 @@ var app = {
         }, false);
 
       document.getElementById("open-cart-btn").addEventListener("click", function(){
-        agentCheckout.openCart();
+        shopCheckout.openCart();
       }, false);
 
       document.getElementById("open-transaction-btn").addEventListener("click", function(){
-        agentCheckout.openTransaction();
+        shopCheckout.openTransaction();
       }, false);
     },
 

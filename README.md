@@ -21,12 +21,8 @@ An example app is provided [here](https://github.com/rayjadore/cordova-agentChec
 ## Setup and Configuration
 
 * Our [installation guide](https://developer.shoptopup.com/docs//cordova-phonegap-installation) contains full setup and initialisation instructions.
-* in config.xml file add your api-key  <preference name="agentCheckout-android-api-key" value="API_KEY" /> 
+* in config.xml file add your api-key  ```<preference name="agentCheckout-android-api-key" value="API_KEY" /> ```
 
-
-## Acknowledgements
-
-Thanks to [Onyemachi Okafor](https://github.com/peerwaya) for help in making a Cordova plugin for agent-checkout for android which helped lots of people to integrate agent-checkout in their android Cordova apps. 👍
 
 ## License
 
