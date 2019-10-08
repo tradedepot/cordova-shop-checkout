@@ -21,8 +21,7 @@ An example app is provided [here](https://github.com/rayjadore/cordova-agentChec
 ## Setup and Configuration
 
 * Our [installation guide](https://developer.shoptopup.com/docs//cordova-phonegap-installation) contains full setup and initialisation instructions.
-Phonegap.
-* Please contact us on [AgentCheckout](https://www.tradedepot.co/) with any questions you may have, we're only a message away!
+
 
 ## Acknowledgements
 
