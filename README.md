@@ -5,9 +5,6 @@ This is a plugin that allows your Cordova or PhoneGap app to use [Intercom for A
 
 * AgentCheckout for Android supports API 19 and above.
 
-## Customer Support
-👋 We are moving all our issues support to our [AgentCheckout Developer Hub available here](https://developer.shoptopup.com/docs/shoptopup-for-android). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
-
 ## Installation
 
 ### Cordova
