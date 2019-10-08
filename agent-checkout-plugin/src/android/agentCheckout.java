@@ -44,7 +44,7 @@ public class agent_checkout extends CordovaPlugin {
             //Get app credentials from config.xml or the app bundle if they can't be found
             String apiKey = preferences.getString("agentCheckout-android-api-key", "");
 
-            Intercom.initialize(cordova.getActivity().getApplication(), apiKey, appId);
+            Checkout.initialize(cordova.getActivity().getApplication(), apiKey);
         } catch (Exception e) {
             Log.e("agentCheckout-Cordova", "ERROR: Something went wrong when initializing agentCheckout. Have you set your AGENTCHECKOUT_ANDROID_API_KEY?", e);
         }
