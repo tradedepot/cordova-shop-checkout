@@ -1,9 +1,9 @@
 
-# AgentCheckout for Cordova
+# Agent-checkout for Cordova
 
-This is a plugin that allows your Cordova or PhoneGap app to use [AgentCheckout for Android](https://github.com/intercom/intercom-android).
+This is a plugin that allows your Cordova or PhoneGap app to use [Agent-checkout for Android](https://github.com/intercom/intercom-android).
 
-* AgentCheckout for Android supports API 15 and above.
+* Agent-checkout for Android supports API 15 and above.
 
 ## Installation
 
@@ -11,12 +11,12 @@ This is a plugin that allows your Cordova or PhoneGap app to use [AgentCheckout 
 
 To install the plugin in your Cordova app, run the following:
 ```script
-cordova plugin add cordova-plugin-agentCheckout
+cordova plugin add cordova-plugin-agent-checkout
 ```
 
 ## Example App
 
-An example app is provided [here](https://github.com/rayjadore/cordova-agentCheckout/tree/master/Example) that shows a basic Cordova app integration with AgentCheckout.
+An example app is provided [here](https://github.com/rayjadore/cordova-agentCheckout/tree/master/Example) that shows a basic Cordova app integration with agent-checkout.
 
 ## Setup and Configuration
 
@@ -25,7 +25,7 @@ An example app is provided [here](https://github.com/rayjadore/cordova-agentChec
 
 ## Acknowledgements
 
-Thanks to [Onyemachi Okafor](https://github.com/peerwaya) for help in making a Cordova plugin for AgentCheckout for android which helped lots of people to integrate Intercom in their android Cordova apps. 👍
+Thanks to [Onyemachi Okafor](https://github.com/peerwaya) for help in making a Cordova plugin for agent-checkout for android which helped lots of people to integrate agent-checkout in their android Cordova apps. 👍
 
 ## License
 
