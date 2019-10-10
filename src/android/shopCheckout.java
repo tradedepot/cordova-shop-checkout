@@ -47,19 +47,18 @@ public class shopCheckout extends CordovaPlugin {
 
             Checkout.initialize(cordova.getActivity().getApplication(), apiKey);
         } catch (Exception e) {
-            callbackContext.error("ERROR: Something went wrong when initializing shopCheckout. Have you set your SHOP-CHECKOUT_ANDROID_API_KEY?");
             Log.e("shopCheckout-Cordova", "ERROR: Something went wrong when initializing shopCheckout. Have you set your SHOP-CHECKOUT_ANDROID_API_KEY?", e);
         }
     }
 
     private enum Action {
         registerAgent {
-        @Override void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
+         void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
             try {
                 JSONObject options = args.optJSONObject(0);
                 if((options.optString("agentId") != null && options.optString("agentId").length() > 0) && (options.optString("firstName") != null && options.optString("firstName").length > 0) &&
                         (options.optString("lastName") != null && options.optString("lastName").length() > 0) && (options.optString("phoneNumber") != null && options.optString("phoneNumber").length() > 0 )
-                        && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0) && (options.optString("company") != null && options.optString("company").length() > 0) &&
+                        && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0)  && (options.optString("company") != null && options.optString("company").length() > 0) &&
                         (options.optString("address") != null && options.optString("address").length() > 0)) {
                 Registration registration = Registration.Builder.create()
                         .agentId(options.optString("agentId"))
@@ -82,7 +81,7 @@ public class shopCheckout extends CordovaPlugin {
         }
       },
         openCart {
-            @Override void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
+             void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
                 try{
                     Checkout.openCart();
                     callbackContext.success();
@@ -93,7 +92,7 @@ public class shopCheckout extends CordovaPlugin {
 
         },
             openTransactions{
-                @Override void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
+                 void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
                     try{
                         Checkout.openTransactions();
                         callbackContext.success();
