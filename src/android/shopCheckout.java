@@ -1,11 +1,18 @@
 package cordova.plugin.shop.checkout;
 
+import org.apache.cordova.CallbackContext;
+import android.content.Intent;
+import android.util.Log;
+
+import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import co.tradedepot.shop.sdk.checkout.Checkout;
+import co.tradedepot.shop.sdk.checkout.Registration;
 /**
  * This class echoes a string called from JavaScript.
  */
@@ -52,8 +59,7 @@ public class shopCheckout extends CordovaPlugin {
                 JSONObject options = args.optJSONObject(0);
                 if((options.optString("agentId") != null && options.optString("agentId").length() > 0) && (options.optString("firstName") != null && options.optString("firstName").length > 0) &&
                         (options.optString("lastName") != null && options.optString("lastName").length() > 0) && (options.optString("phoneNumber") != null && options.optString("phoneNumber").length() > 0 )
-                        && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0) &&
-                        (options.optDouble("longitude") != null) && (options.optDouble("latitude") != null) && (options.optString("company") != null && options.optString("company").length() > 0) &&
+                        && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0) && (options.optString("company") != null && options.optString("company").length() > 0) &&
                         (options.optString("address") != null && options.optString("address").length() > 0)) {
                 Registration registration = Registration.Builder.create()
                         .agentId(options.optString("agentId"))
@@ -62,7 +68,7 @@ public class shopCheckout extends CordovaPlugin {
                         .phoneNumber(options.optString("phoneNumber"))
                         .countryCode(options.optString("countryCode"))
                         .company(options.optString("company"))
-                        .latitude(options.opttDouble("latitude"))
+                        .latitude(options.optDouble("latitude"))
                         .longitude(options.optDouble("longitude"))
                         .address(options.optString("address")).build();
                 Checkout.registerAgent(registration);
