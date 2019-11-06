@@ -11,6 +11,10 @@ var shopCheckout = {
         cordova.exec(success, error, 'shopCheckout', 'openTransactions', []);
     },
 
+    logout: function(success, error) {
+        cordova.exec(success, error, 'shopCheckout', 'logout', []);
+    }
+
 }
 
 module.exports = shopCheckout;
