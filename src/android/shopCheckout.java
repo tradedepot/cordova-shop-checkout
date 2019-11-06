@@ -84,7 +84,7 @@ public class ShopCheckout extends CordovaPlugin {
         openProducts {
             void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
                 try{
-                    Checkout.openCart();
+                    Checkout.openProducts();
                     callbackContext.success();
                 } catch (Exception e) {
                     callbackContext.error("shop-checkout not initialized");
