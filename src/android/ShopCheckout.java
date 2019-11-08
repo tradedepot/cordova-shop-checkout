@@ -57,7 +57,7 @@ public class ShopCheckout extends CordovaPlugin {
             void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
                 try {
                     JSONObject options = args.optJSONObject(0);
-                    if((options.optString("agentId") != null && options.optString("agentId").length() > 0) && (options.optString("firstName") != null && options.optString("firstName").length > 0) &&
+                    if((options.optString("agentId") != null && options.optString("agentId").length() > 0) && (options.optString("firstName") != null && options.optString("firstName").length() > 0) &&
                             (options.optString("lastName") != null && options.optString("lastName").length() > 0) && (options.optString("phoneNumber") != null && options.optString("phoneNumber").length() > 0 )
                             && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0)  && (options.optString("company") != null && options.optString("company").length() > 0) &&
                             (options.optString("address") != null && options.optString("address").length() > 0)) {
@@ -114,7 +114,8 @@ public class ShopCheckout extends CordovaPlugin {
         isInitialized {
             void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
                 try{
-                    boolean initialized = Checkout.isInitialized();
+                    Checkout chkObject = new Checkout();
+                    boolean initialized = chkObject.isInitialized();
                     callbackContext.success(Boolean.toString(initialized));
                 } catch (Exception e) {
                     callbackContext.error("shop-checkout not initialized");
