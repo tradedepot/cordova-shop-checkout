@@ -56,7 +56,7 @@ public class ShopCheckout extends CordovaPlugin {
         registerAgent {
             void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
                 try {
-                    Log.i('register agent', '--->');
+                    Log.i("register agent");
                     JSONObject options = args.optJSONObject(0);
                     if((options.optString("agentId") != null && options.optString("agentId").length() > 0) && (options.optString("firstName") != null && options.optString("firstName").length() > 0) &&
                             (options.optString("lastName") != null && options.optString("lastName").length() > 0) && (options.optString("phoneNumber") != null && options.optString("phoneNumber").length() > 0 )
