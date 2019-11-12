@@ -47,6 +47,7 @@ public class ShopCheckout extends CordovaPlugin {
             String sandbox = preferences.getString("shop-checkout-android-sandbox", "true");
             boolean isSandbox = Boolean.parseBoolean(sandbox);
             Checkout.initialize(cordova.getActivity().getApplication(), apiKey, isSandbox);
+            Log.i("shop checkout", "initialized");
         } catch (Exception e) {
             Log.e("ShopCheckout-Cordova", "ERROR: Something went wrong when initializing shopCheckout. Have you set your SHOP-CHECKOUT_ANDROID_API_KEY?", e);
         }
