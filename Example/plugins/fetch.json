@@ -6,5 +6,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-shop-checkout": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/tradedepot/cordova-shop-checkout.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -1,0 +1,50 @@
+{
+  "_from": "git+https://github.com/tradedepot/cordova-shop-checkout.git",
+  "_id": "cordova-plugin-shop-checkout@0.1.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-shop-checkout",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/tradedepot/cordova-shop-checkout.git",
+    "rawSpec": "https://github.com/tradedepot/cordova-shop-checkout.git",
+    "saveSpec": "git+https://github.com/tradedepot/cordova-shop-checkout.git",
+    "fetchSpec": "https://github.com/tradedepot/cordova-shop-checkout.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/tradedepot/cordova-shop-checkout.git#d3f1cb08a0fe80033f03eb342c47e758a5f56380",
+  "_spec": "https://github.com/tradedepot/cordova-shop-checkout.git",
+  "_where": "/home/chisom/Desktop/testApp",
+  "author": {
+    "name": "tradedepot"
+  },
+  "bugs": {
+    "url": "https://github.com/tradedepot/cordova-shop-checkout/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-shop-checkout",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "a cordova plugin for shop checkout",
+  "homepage": "https://github.com/tradedepot/cordova-shop-checkout#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-shop-checkout",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tradedepot/cordova-shop-checkout.git"
+  },
+  "version": "0.1.0"
+}
