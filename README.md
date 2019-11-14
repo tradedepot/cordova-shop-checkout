@@ -11,7 +11,7 @@ This is a plugin that allows your Cordova or PhoneGap app to use [Shop-checkout 
 
 To install the plugin in your Cordova app, run the following:
 ```script
-cordova plugin add cordova-plugin-shop-checkout or 
+cordova plugin add cordova-plugin-shop-checkout 
 ```
 
 ## Example App
@@ -24,7 +24,7 @@ An example app is provided [here](https://github.com/rayjadore/cordova-shopCheck
 * in config.xml file add your api-key  ```<preference name="shopCheckout-android-api-key" value="API_KEY" /> ``` 
 * setup androidx for your project by implementing androidx on dependencies in                            ```platforms/android/app/build.gradle``` implementation "androidx.core:core:1.0.0"
 * implement Androidx on platforms/android/gradle.properties  
-     ```   android.useAndroidX=true
+     ```android.useAndroidX=true
        android.enableJetifier=true ````
 *  set the default minimum SDK to version 21 in build.gradle located in                                   ```platforms/android``` defaultMinSdkVersion=21
 *   on config.xml input your api-key  ```<preference name="shopCheckout-android-api-key" value="YOUR_ANDROID_API_KEY" />```
