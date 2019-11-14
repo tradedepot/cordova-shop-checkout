@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-shop-checkout",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "a cordova plugin for shop checkout",
   "cordova": {
     "id": "cordova-plugin-shop-checkout",
