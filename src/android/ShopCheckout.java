@@ -63,8 +63,6 @@ public class ShopCheckout extends CordovaPlugin {
             String sandbox = preferences.getString("shop-checkout-android-sandbox", "true");
             boolean isSandbox = Boolean.parseBoolean(sandbox);
             Checkout.initialize(cordova.getActivity(), apiKey, isSandbox);
-            Log.i(TAG, "initialized: "+isSandbox);
-            Log.i(TAG, "APIKEY:" +apiKey);
         } catch (Exception e) {
             Log.e("ShopCheckout-Cordova", "ERROR: Something went wrong when initializing shopCheckout. Have you set your SHOP-CHECKOUT_ANDROID_API_KEY?", e);
         }
@@ -76,8 +74,7 @@ public class ShopCheckout extends CordovaPlugin {
             JSONObject options = args.optJSONObject(0);
             if ((options.optString("agentId") != null && options.optString("agentId").length() > 0) && (options.optString("firstName") != null && options.optString("firstName").length() > 0) &&
                     (options.optString("lastName") != null && options.optString("lastName").length() > 0) && (options.optString("phoneNumber") != null && options.optString("phoneNumber").length() > 0)
-                    && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0) && (options.optString("company") != null && options.optString("company").length() > 0) &&
-                    (options.optString("address") != null && options.optString("address").length() > 0)) {
+                    && (options.optString("countryCode") != null && options.optString("countryCode").length() > 0) && (options.optString("company") != null && options.optString("company").length() > 0)) {
                 Double latitude = options.optDouble("latitude");
                 Double longitude = options.optDouble("longitude");
                 if (Double.isNaN(latitude)) {
@@ -144,7 +141,7 @@ public class ShopCheckout extends CordovaPlugin {
         try {
             Checkout chkObject = new Checkout();
             boolean initialized = chkObject.isInitialized();
-            Log.i(TAG, "Is Checkout Initialized:" +Boolean.toString(initialized));
+            //Log.i(TAG, "Is Checkout Initialized:" +Boolean.toString(initialized));
             callbackContext.success(Boolean.toString(initialized));
         } catch (Exception e) {
             callbackContext.error("shop-checkout not initialized");
