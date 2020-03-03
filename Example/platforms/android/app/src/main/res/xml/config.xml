@@ -8,12 +8,12 @@
         <param name="android-package" value="cordova.plugin.shop.checkout.ShopCheckout" />
         <param name="onload" value="true" />
     </feature>
-    <name>HelloCordova</name>
+    <name>Shop Checkout</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A sample Apache Cordova application for shop checkout
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+       TradeDepot Team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -25,6 +25,6 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="shop-checkout-android-api-key" value="5kwswXkcXMyTpMT2vNBnTRk9hr6vrL6nvW_test_key" />
+    <preference name="shop-checkout-android-api-key" value="YOUR_ANDROID_API_KEY" />
     <preference name="shop-checkout-android-sandbox" value="true" />
 </widget>
