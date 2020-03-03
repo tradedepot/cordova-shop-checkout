@@ -1,6 +1,6 @@
 {
-  "name": "shopTopup",
-  "displayName": "shop Checkout",
+  "name": "shop_checkout",
+  "displayName": "Shop Checkout",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application for agentCheckout .",
   "main": "index.js",
