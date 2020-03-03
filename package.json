@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-shop-checkout",
-  "version": "0.1.1",
-  "description": "a cordova plugin for shop checkout",
+  "version": "0.1.2",
+  "description": "a cordova plugin for TradeDepot Shop Checkout Point",
   "cordova": {
     "id": "cordova-plugin-shop-checkout",
     "platforms": [
